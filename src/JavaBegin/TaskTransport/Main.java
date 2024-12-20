@@ -12,7 +12,9 @@ public class Main {
        Engine engine = new Engine(10);
 
         Car car = new Car(10,engine);
-        System.out.println("car.getEngine().getVolume() = " + car.getEngine().getVolume());
+
+        System.out.println(car.wheelCount);
+        //System.out.println("car.getEngine().getVolume() = " + car.getEngine().getVolume());
 
     }
 }
