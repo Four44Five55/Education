@@ -1,6 +1,7 @@
 package JavaBegin.TaskRobot;
 
-public class Robocop implements IRobot{
+public class Robocop implements IRobot {
+    private String name;
 
     @Override
     public void move() {
@@ -15,5 +16,10 @@ public class Robocop implements IRobot{
     @Override
     public void fight() {
         System.out.println(" Robocop fight");
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }
