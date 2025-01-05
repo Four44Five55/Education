@@ -1,12 +1,11 @@
 package JavaBegin.TaskRobot;
 
-public class Robocop implements IRobot {
-    private String name;
+public class Robocop extends ARobot {
 
-    @Override
+   /* @Override
     public void move() {
         System.out.println("Robocop move");
-    }
+    }*/
 
     @Override
     public void stop() {
@@ -18,8 +17,21 @@ public class Robocop implements IRobot {
         System.out.println(" Robocop fight");
     }
 
+
     @Override
-    public String getName() {
-        return name;
+    public void talk() {
+        System.out.println("Robocop talk");
+    }
+
+    public Robocop() {
+    }
+
+    public Robocop(String name, IWing wing) {
+        super(name, wing);
+    }
+
+    @Override
+    public void on() {
+        System.out.println("on with beep");
     }
 }

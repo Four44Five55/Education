@@ -2,10 +2,15 @@ package JavaBegin.TaskRobot;
 
 public class Main {
     public static void main(String[] args) {
-        Robocop robocop=new Robocop();
+        Robocop robocop = new Robocop();
+        robocop.setName("Robo");
         robocop.move();
-        Terminator terminator=new Terminator();
+
+
+        Terminator terminator = new Terminator();
         terminator.fight();
+
+
     }
 
 }
